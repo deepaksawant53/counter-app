@@ -9,6 +9,8 @@ class Counter extends Component {
 
   render() {
     console.log("props", this.props);
+    console.log("Children", this.props.children);
+    console.log("Children props:", this.props.children.props);
 
     return (
       <div>
@@ -25,7 +27,6 @@ class Counter extends Component {
   }
 
   formatCount() {
-    console.log(this.state.test);
     const { value: count } = this.state;
     return count === 0 ? "Zero" : count;
   }
