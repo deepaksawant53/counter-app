@@ -8,8 +8,12 @@ class Counter extends Component {
     // then do some operation
   }
 
+  componentWillUnmount() {
+    console.log("Counter - Unmount");
+  }
+
   render() {
-    console.log("Counter - Rendered")
+    console.log("Counter - Rendered");
     return (
       <div>
         <span style={{ fontSize: 10 }} className={this.getBadgeClasses()}>{this.formatCount()}</span>
