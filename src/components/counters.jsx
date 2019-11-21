@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Counter from './counter';
-import { log } from 'util';
 
 class Counters extends Component {
   render() {
